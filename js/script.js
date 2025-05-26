@@ -34,6 +34,12 @@ function crerCaja(){
     newDiv.addEventListener("click",()=>{
         newDiv.style.backgroundColor = colorSeleccionado;
     });
+    newDiv.addEventListener("pointerover", ()=>{
+        newDiv.style.border = '3px solid  violet';
+    });
+    newDiv.addEventListener("pointerout", ()=>{
+        newDiv.style.border = '3px solid black';
+    })
 
     contenedor.appendChild(newDiv);
 
