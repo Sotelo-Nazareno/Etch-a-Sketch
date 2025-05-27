@@ -9,12 +9,13 @@ body{
 .paleta{
     height: 400px;
     width: 200px;
-    margin-right: 200px;
+    margin-right: 100px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
     box-shadow: 10px 10px 5px 5px black;
+    margin-left: -300px;
 }
 .content{
     height: 770px;
@@ -26,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    
 }
 
 .content:hover{
@@ -38,7 +40,11 @@ body{
     margin-top: 100px;
     cursor: pointer;
     background-color: rgb(139, 137, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .clean:hover{
     background-color: red;

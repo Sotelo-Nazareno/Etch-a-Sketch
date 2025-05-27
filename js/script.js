@@ -4,19 +4,19 @@ function crearColores(){
     var paleta = document.querySelector(".paleta");
     
     for(let color of colores){
-        var newColor = document.createElement("div");
+        var newColor = document.createElement("button");
 
-        newColor.style.height = "60px"
-        newColor.style.width = "60px"
+        newColor.style.height = "60px";
+        newColor.style.width = "60px";
         newColor.style.borderRadius = "100px";
         newColor.style.background = color;
-        newColor.style.border = '2px solid black'
-        newColor.style.marginTop = "20px"
-        newColor.style.marginLeft = "2px"
+        newColor.style.border = '2px solid black';
+        newColor.style.marginTop = "20px";
+        newColor.style.marginLeft = "2px";
         newColor.addEventListener("click",()=>{
             colorSeleccionado = color;
         });
-        paleta.appendChild(newColor)
+        paleta.appendChild(newColor);
     }
 
 }
